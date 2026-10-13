@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Навчальна форма створення товару каталогу смарт-речей LUME.">
+    <title>Додавання товару — LUME</title>
+</head>
+<body>
+    <a href="#main-content">Перейти до основного вмісту</a>
+    <header>
+        <a href="index.html" aria-label="LUME — на головну"><strong>LUME</strong></a>
+        <p>SMART OBJECTS FOR HOME</p>
+        <nav aria-label="Основна навігація">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="index.html#collection">Каталог</a></li>
+                <li><a href="login.html">Вхід</a></li>
+                <li><a href="register.html">Реєстрація</a></li>
+                <li><a href="product-form.html">Додати товар</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content" tabindex="-1">
+        <h1>Додати товар до каталогу LUME</h1>
+        <p>Форма для майбутнього адміністратора магазину. Обов’язкові поля позначено словами.</p>
+        <p id="product-demo">Це навчальна сторінка без авторизації та збереження товарів.
+            Створення товару й перевірку прав адміністратора надалі виконуватиме сервер.</p>
+        <form action="api/products" method="post" aria-describedby="product-demo">
+            <fieldset>
+                <legend>Основні дані товару</legend>
+                <div>
+                    <label for="product-name">Назва товару (обов’язково)</label>
+                    <p id="product-name-hint">Від 3 до 80 символів, наприклад LUME TABLE 01.</p>
+                    <input id="product-name" name="title" type="text" minlength="3" maxlength="80"
+                           required aria-describedby="product-name-hint">
+                </div>
+                <div>
+                    <label for="product-description">Опис товару (обов’язково)</label>
+                    <p id="product-description-hint">Від 20 до 1000 символів: призначення, матеріали й основні характеристики.</p>
+                    <textarea id="product-description" name="description" rows="6" minlength="20" maxlength="1000"
+                              required aria-describedby="product-description-hint"></textarea>
+                </div>
+                <div>
+                    <label for="product-category">Категорія (обов’язково)</label>
+                    <select id="product-category" name="category" required>
+                        <option value="">Оберіть категорію</option>
+                        <option value="light">Світло</option>
+                        <option value="power">Живлення</option>
+                        <option value="control">Керування</option>
+                        <option value="sensors">Датчики</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="product-price">Ціна в євро (обов’язково)</label>
+                    <p id="product-price-hint">Від 0,01 до 9999,99 євро, не більше двох знаків після коми.
+                        Роздільник дробової частини залежить від налаштувань браузера.</p>
+                    <input id="product-price" name="price" type="number" min="0.01" max="9999.99" step="0.01"
+                           required aria-describedby="product-price-hint">
+                </div>
+            </fieldset>
+            <fieldset aria-describedby="product-status-hint">
+                <legend>Статус публікації (обов’язково)</legend>
+                <p id="product-status-hint">Оберіть один варіант: зберегти для підготовки або опублікувати в каталозі.</p>
+                <div>
+                    <input id="product-draft" name="status" type="radio" value="draft" required>
+                    <label for="product-draft">Чернетка</label>
+                </div>
+                <div>
+                    <input id="product-published" name="status" type="radio" value="published" required>
+                    <label for="product-published">Опублікований</label>
+                </div>
+            </fieldset>
+            <fieldset aria-describedby="product-finishes-hint">
+                <legend>Доступні кольори корпусу (необов’язково)</legend>
+                <p id="product-finishes-hint">Можна обрати кілька кольорів із колекції LUME.
+                    Залиште без вибору, якщо товар не має кольорових варіантів.</p>
+                <div>
+                    <input id="product-ivory" name="finishes" type="checkbox" value="ivory">
+                    <label for="product-ivory">Ivory — світлий</label>
+                </div>
+                <div>
+                    <input id="product-ink" name="finishes" type="checkbox" value="ink">
+                    <label for="product-ink">Ink — темний</label>
+                </div>
+                <div>
+                    <input id="product-citrus" name="finishes" type="checkbox" value="citrus">
+                    <label for="product-citrus">Citrus — жовтий</label>
+                </div>
+            </fieldset>
+            <button type="submit">Створити товар</button>
+            <a href="index.html#collection">Скасувати й повернутися до каталогу</a>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 LUME. Навчальний проєкт.</p>
+        <p><a href="index.html">Повернутися на головну</a></p>
+    </footer>
+</body>
+</html>

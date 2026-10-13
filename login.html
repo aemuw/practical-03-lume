@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Навчальна форма входу до облікового запису LUME.">
+    <title>Вхід — LUME</title>
+</head>
+<body>
+    <a href="#main-content">Перейти до основного вмісту</a>
+    <header>
+        <a href="index.html" aria-label="LUME — на головну"><strong>LUME</strong></a>
+        <p>SMART OBJECTS FOR HOME</p>
+        <nav aria-label="Основна навігація">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="index.html#collection">Каталог</a></li>
+                <li><a href="login.html">Вхід</a></li>
+                <li><a href="register.html">Реєстрація</a></li>
+                <li><a href="product-form.html">Додати товар</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content" tabindex="-1">
+        <h1>Вхід до LUME</h1>
+        <p>Введіть email та пароль облікового запису.</p>
+        <p id="login-demo">Навчальна форма: сервер ще не підключено. Використовуйте лише вигадані дані.
+            Після коректного заповнення браузер спробує надіслати POST на майбутній маршрут.</p>
+        <form action="api/login" method="post" aria-describedby="login-demo">
+            <fieldset>
+                <legend>Дані для входу</legend>
+                <div>
+                    <label for="login-email">Електронна пошта (обов’язково)</label>
+                    <input id="login-email" name="email" type="email" autocomplete="email" required>
+                </div>
+                <div>
+                    <label for="login-password">Пароль (обов’язково)</label>
+                    <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+                </div>
+            </fieldset>
+            <button type="submit">Увійти</button>
+        </form>
+        <p>Ще немає облікового запису? <a href="register.html">Зареєструватися</a></p>
+    </main>
+    <footer>
+        <p>&copy; 2026 LUME. Навчальний проєкт.</p>
+        <p><a href="index.html">Повернутися на головну</a></p>
+    </footer>
+</body>
+</html>

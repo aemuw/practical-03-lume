@@ -1,0 +1,295 @@
+{
+  "browser": "155.0.4283.45",
+  "checks": [
+    {
+      "name": "index.html: ids",
+      "ok": true
+    },
+    {
+      "name": "index.html: labels",
+      "ok": true
+    },
+    {
+      "name": "index.html: descriptions",
+      "ok": true
+    },
+    {
+      "name": "index.html: buttons",
+      "ok": true
+    },
+    {
+      "name": "index.html: anchors",
+      "ok": true
+    },
+    {
+      "name": "index.html: main",
+      "ok": true
+    },
+    {
+      "name": "index.html: plain",
+      "ok": true
+    },
+    {
+      "name": "index.html: skip link focus",
+      "ok": true
+    },
+    {
+      "name": "index.html: skip link reaches main",
+      "ok": true
+    },
+    {
+      "name": "login.html: ids",
+      "ok": true
+    },
+    {
+      "name": "login.html: labels",
+      "ok": true
+    },
+    {
+      "name": "login.html: descriptions",
+      "ok": true
+    },
+    {
+      "name": "login.html: buttons",
+      "ok": true
+    },
+    {
+      "name": "login.html: anchors",
+      "ok": true
+    },
+    {
+      "name": "login.html: main",
+      "ok": true
+    },
+    {
+      "name": "login.html: plain",
+      "ok": true
+    },
+    {
+      "name": "login.html: skip link focus",
+      "ok": true
+    },
+    {
+      "name": "login.html: skip link reaches main",
+      "ok": true
+    },
+    {
+      "name": "register.html: ids",
+      "ok": true
+    },
+    {
+      "name": "register.html: labels",
+      "ok": true
+    },
+    {
+      "name": "register.html: descriptions",
+      "ok": true
+    },
+    {
+      "name": "register.html: buttons",
+      "ok": true
+    },
+    {
+      "name": "register.html: anchors",
+      "ok": true
+    },
+    {
+      "name": "register.html: main",
+      "ok": true
+    },
+    {
+      "name": "register.html: plain",
+      "ok": true
+    },
+    {
+      "name": "register.html: skip link focus",
+      "ok": true
+    },
+    {
+      "name": "register.html: skip link reaches main",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: ids",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: labels",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: descriptions",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: buttons",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: anchors",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: main",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: plain",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: skip link focus",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: skip link reaches main",
+      "ok": true
+    },
+    {
+      "name": "login empty rejected",
+      "ok": true
+    },
+    {
+      "name": "invalid email rejected",
+      "ok": true
+    },
+    {
+      "name": "login valid accepted",
+      "ok": true
+    },
+    {
+      "name": "login label focuses input",
+      "ok": true
+    },
+    {
+      "name": "login Tab email -> password",
+      "ok": true
+    },
+    {
+      "name": "Enter triggers submit",
+      "ok": true
+    },
+    {
+      "name": "login uses POST",
+      "ok": true
+    },
+    {
+      "name": "registration empty rejected",
+      "ok": true
+    },
+    {
+      "name": "short display name rejected",
+      "ok": true
+    },
+    {
+      "name": "short password rejected",
+      "ok": true
+    },
+    {
+      "name": "HTML does not compare passwords as documented",
+      "ok": true
+    },
+    {
+      "name": "maxlength clips name to 80",
+      "ok": true
+    },
+    {
+      "name": "product empty rejected",
+      "ok": true
+    },
+    {
+      "name": "short product title rejected",
+      "ok": true
+    },
+    {
+      "name": "short description rejected",
+      "ok": true
+    },
+    {
+      "name": "empty category rejected",
+      "ok": true
+    },
+    {
+      "name": "price below range rejected",
+      "ok": true
+    },
+    {
+      "name": "price above range rejected",
+      "ok": true
+    },
+    {
+      "name": "price precision rejected",
+      "ok": true
+    },
+    {
+      "name": "missing status rejected",
+      "ok": true
+    },
+    {
+      "name": "Space activates radio",
+      "ok": true
+    },
+    {
+      "name": "arrow changes radio choice",
+      "ok": true
+    },
+    {
+      "name": "Space activates checkbox",
+      "ok": true
+    },
+    {
+      "name": "checkbox label activates control",
+      "ok": true
+    },
+    {
+      "name": "valid product accepted",
+      "ok": true
+    },
+    {
+      "name": "FormData includes both selected finishes",
+      "ok": true
+    },
+    {
+      "name": "unchecked finish omitted",
+      "ok": true
+    },
+    {
+      "name": "FormData keys match all expected product fields",
+      "ok": true
+    },
+    {
+      "name": "GET writes only search to URL",
+      "ok": true
+    }
+  ],
+  "productData": [
+    [
+      "title",
+      "LUME TABLE 01"
+    ],
+    [
+      "description",
+      "Настільна лампа з регулюванням теплого світла."
+    ],
+    [
+      "category",
+      "light"
+    ],
+    [
+      "price",
+      "129"
+    ],
+    [
+      "status",
+      "published"
+    ],
+    [
+      "finishes",
+      "ivory"
+    ],
+    [
+      "finishes",
+      "ink"
+    ]
+  ]
+}
